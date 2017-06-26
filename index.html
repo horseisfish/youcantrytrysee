@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh_TW">
+<head>
+  <title>請輸入密碼</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body >
+<style>
+  body{
+    background-color: black;
+  }
+  .row{}
+</style>
+
+<div class="container">
+	
+	<div class="col-lg-4" >
+		<h1 style="color: red">輸入密碼</h1>
+ 		<input type="password" id="myPsw" >
+    <button onclick="myFunction()">送出</button>
+    <img src="newnew.jpg" class="img-rounded" alt="Cinque Terre" width="300%">		
+	</div>
+  		
+<div class="col-lg-4"></div>
+</div>
+<audio id="audio" src="http://www.soundjay.com/button/beep-07.wav" autostart="false" ></audio>
+<script>
+
+function myFunction() {
+    var x = document.getElementById("myPsw").value;
+    if ( x == "5349") {
+    window.open("播放音樂.html");
+  }else{
+    
+    window.open("錯誤頁面.html")
+    window.opener=null;
+    window.close();
+  }
+}
+	
+	
+
+</script>
+</body>
+</html>
